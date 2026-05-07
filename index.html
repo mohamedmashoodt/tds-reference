@@ -392,8 +392,10 @@ function clearAll() {
   doFilter();
 }
 
-document.getElementById('st-total').textContent = DATA.length;
-render(DATA);
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('st-total').textContent = DATA.length;
+  render(DATA);
+});
 </script>
 </body>
 </html>
